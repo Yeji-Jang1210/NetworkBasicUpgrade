@@ -44,12 +44,12 @@ class MarketViewController: UIViewController {
         print(#function, "3333333")
         
         //깃허브에 올리면 안됨!!! -> 따라서 swift파일 하나 만들어두고 올리지 말기(.gitignore에 추가)
-        let url = "https://api.upbit.com/v1/market/all"
+        //let url = "https://api.upbit.com/v1/market/all"
         
-        AF.request(url).responseDecodable(of: [Market].self) { response in
+        AF.request(APIURL.upbitURL).responseDecodable(of: [Market].self) { response in
             switch response.result {
             case .success(let markets):
-                //self.list = markets
+                self.list = markets
                 print("SUCCESS")
             case .failure(let error):
                 print(error)

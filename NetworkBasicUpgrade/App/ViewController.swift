@@ -82,7 +82,7 @@ class ViewController: UIViewController {
     //2. responseString확인
     //3. nil
     @objc func checkButtonTapped(){
-        let url = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(numberTextField.text!)"
+        let url = "\(APIURL.lottoURL)\(numberTextField.text!)"
 
         //만약 서버와의 통신은 성공했지만, 잘못된 값이 들어와 데이터가 nil일경우의 처리도 중요
         AF.request(url).responseDecodable(of: Lotto.self) { response in

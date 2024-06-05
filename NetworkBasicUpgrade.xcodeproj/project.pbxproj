@@ -19,6 +19,12 @@
 		B80E941D2C0FFD8B000D6645 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80E941C2C0FFD8B000D6645 /* MarketViewController.swift */; };
 		B80E941F2C100413000D6645 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80E941E2C100413000D6645 /* MarketTableViewCell.swift */; };
 		B80E94212C10130C000D6645 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B80E94202C10130C000D6645 /* .gitignore */; };
+		B80E94232C101418000D6645 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80E94222C101418000D6645 /* APIKey.swift */; };
+		B80E94252C101427000D6645 /* FirstCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80E94242C101427000D6645 /* FirstCollectionViewController.swift */; };
+		B821442E2C10596900E6100C /* DailyBoxOfficeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821442D2C10596900E6100C /* DailyBoxOfficeViewController.swift */; };
+		B82144302C109BE700E6100C /* BoxOfficeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821442F2C109BE700E6100C /* BoxOfficeTableViewCell.swift */; };
+		B82144352C109F0B00E6100C /* BasePaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82144342C109F0B00E6100C /* BasePaddingLabel.swift */; };
+		B82144382C10A12800E6100C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82144372C10A12800E6100C /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		B80E941C2C0FFD8B000D6645 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		B80E941E2C100413000D6645 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
 		B80E94202C10130C000D6645 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B80E94222C101418000D6645 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		B80E94242C101427000D6645 /* FirstCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewController.swift; sourceTree = "<group>"; };
+		B821442D2C10596900E6100C /* DailyBoxOfficeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBoxOfficeViewController.swift; sourceTree = "<group>"; };
+		B821442F2C109BE700E6100C /* BoxOfficeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeTableViewCell.swift; sourceTree = "<group>"; };
+		B82144342C109F0B00E6100C /* BasePaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePaddingLabel.swift; sourceTree = "<group>"; };
+		B82144372C10A12800E6100C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,16 +81,62 @@
 		B80E93FB2C0FE4D7000D6645 /* NetworkBasicUpgrade */ = {
 			isa = PBXGroup;
 			children = (
-				B80E93FC2C0FE4D7000D6645 /* AppDelegate.swift */,
-				B80E93FE2C0FE4D7000D6645 /* SceneDelegate.swift */,
-				B80E94002C0FE4D7000D6645 /* ViewController.swift */,
-				B80E941C2C0FFD8B000D6645 /* MarketViewController.swift */,
-				B80E941E2C100413000D6645 /* MarketTableViewCell.swift */,
+				B82144362C10A12300E6100C /* Model */,
+				B82144312C109ED500E6100C /* Custom */,
+				B821442C2C10592C00E6100C /* Movie */,
+				B821442A2C10591000E6100C /* App */,
+				B821442B2C10591B00E6100C /* Market */,
 				B80E94052C0FE4D9000D6645 /* Assets.xcassets */,
 				B80E94072C0FE4D9000D6645 /* LaunchScreen.storyboard */,
 				B80E940A2C0FE4D9000D6645 /* Info.plist */,
+				B80E94222C101418000D6645 /* APIKey.swift */,
+				B80E94242C101427000D6645 /* FirstCollectionViewController.swift */,
 			);
 			path = NetworkBasicUpgrade;
+			sourceTree = "<group>";
+		};
+		B821442A2C10591000E6100C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B80E93FC2C0FE4D7000D6645 /* AppDelegate.swift */,
+				B80E93FE2C0FE4D7000D6645 /* SceneDelegate.swift */,
+				B80E94002C0FE4D7000D6645 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B821442B2C10591B00E6100C /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				B80E941C2C0FFD8B000D6645 /* MarketViewController.swift */,
+				B80E941E2C100413000D6645 /* MarketTableViewCell.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		B821442C2C10592C00E6100C /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				B821442D2C10596900E6100C /* DailyBoxOfficeViewController.swift */,
+				B821442F2C109BE700E6100C /* BoxOfficeTableViewCell.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		B82144312C109ED500E6100C /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				B82144342C109F0B00E6100C /* BasePaddingLabel.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		B82144362C10A12300E6100C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B82144372C10A12800E6100C /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,8 +225,14 @@
 				B80E941D2C0FFD8B000D6645 /* MarketViewController.swift in Sources */,
 				B80E94012C0FE4D7000D6645 /* ViewController.swift in Sources */,
 				B80E93FD2C0FE4D7000D6645 /* AppDelegate.swift in Sources */,
+				B80E94252C101427000D6645 /* FirstCollectionViewController.swift in Sources */,
 				B80E941F2C100413000D6645 /* MarketTableViewCell.swift in Sources */,
+				B82144352C109F0B00E6100C /* BasePaddingLabel.swift in Sources */,
+				B80E94232C101418000D6645 /* APIKey.swift in Sources */,
 				B80E93FF2C0FE4D7000D6645 /* SceneDelegate.swift in Sources */,
+				B82144382C10A12800E6100C /* Model.swift in Sources */,
+				B821442E2C10596900E6100C /* DailyBoxOfficeViewController.swift in Sources */,
+				B82144302C109BE700E6100C /* BoxOfficeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
